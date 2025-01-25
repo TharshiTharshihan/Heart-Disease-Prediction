@@ -7,7 +7,7 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
+        background-color: #ffffff;
         margin: 0;
         padding: 0;
       }
@@ -22,7 +22,7 @@
       .container {
         width: 50%;
         margin: auto;
-        background-color: #ffffff;
+        background-color: #d6d3d3;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,6 +32,7 @@
         font-weight: bold;
         display: block;
         margin-top: 10px;
+        color: blue;
       }
 
       input[type="text"] {
@@ -39,7 +40,8 @@
         padding: 10px;
         margin-top: 5px;
         margin-bottom: 20px;
-        border: 1px solid #ccc;
+        border: 1px solid #040000;
+
         border-radius: 5px;
         box-sizing: border-box;
       }
@@ -85,11 +87,11 @@
           <input type="text" name="age" required />
         </div>
         <div class="form-group">
-          <label for="sex">Sex:</label>
+          <label for="sex">Sex:(Male-1 , Female-0)</label>
           <input type="text" name="sex" required />
         </div>
         <div class="form-group">
-          <label for="cp">Chest pain type:</label>
+          <label for="cp">Chest pain type:(0/1/2/3)</label>
           <input type="text" name="cp" required />
         </div>
         <div class="form-group">
@@ -101,7 +103,7 @@
           <input type="text" name="chol" required />
         </div>
         <div class="form-group">
-          <label for="fbs">Fasting blood sugar > 120 mg/dl:</label>
+          <label for="fbs">Fasting blood sugar > 120 mg/dl:(0/1)</label>
           <input type="text" name="fbs" required />
         </div>
         <div class="form-group">
@@ -134,7 +136,7 @@
           <input type="text" name="ca" required />
         </div>
         <div class="form-group">
-          <label for="thal">Thalassemia test results (values 0, 1, 2):</label>
+          <label for="thal">Thalassemia test results (values 1, 2 , 3):</label>
           <input type="text" name="thal" required />
         </div>
         <button type="submit">Predict</button>
