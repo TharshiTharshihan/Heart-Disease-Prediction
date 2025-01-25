@@ -9,14 +9,19 @@ app = Flask(__name__)
 model = pickle.load(open('heart_disease_model.pkl', 'rb'))
 
 @app.route('/')
+def first():
+    
+    return render_template('first.html')
+
+
+@app.route('/calculate', methods=['Get'])
 def home():
-    # Render an HTML form for user input
-    return render_template('home.html')
+     return render_template('home.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # Get input data from form
+        # Get input data 
         input_data = [float(x) for x in request.form.values()]
         input_data_as_numpy_array = np.asarray(input_data).reshape(1, -1)
         

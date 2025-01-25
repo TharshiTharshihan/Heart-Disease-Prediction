@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease Prediction System</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        background-image: url("https://wallpapercave.com/wp/wp3864485.jpg");
+        background-size: cover;
+        background-position: left top;
+        background-repeat: no-repeat;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px;
+        height: 95vh;
+        color: #f60000;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #618ae9;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #000000;
+        max-width: 500px;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .card {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+      }
+
+      .card h3 {
+        font-size: 1.1rem;
+        margin: 0;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Disease Prediction System</h1>
+      <p>
+        Select the symptoms you think you might have, and it will predict the
+        disease or condition you could be suffering from. Then you could also
+        look for hospitals/clinics for treatment. Finally, your suggestions or
+        comments in the comment box are always welcome.
+      </p>
+      <div class="grid">
+        <a href="/calculate" style="text-decoration: none">
+          <div class="card">
+            <img
+              src="https://tse4.mm.bing.net/th?id=OIP.xSpspLeY6ApVGVcbureuQQHaG7&pid=Api&P=0&h=220"
+              alt="Symptoms Icon"
+            />
+            <h3>Check Now</h3>
+          </div>
+        </a>
+        <div class="card">
+          <img
+            src="https://pluspng.com/img-png/hospital-png-hd-images-energy-efficient-and-comfortable-innovative-and-cost-saving-3084.png"
+            alt="Diagnosis Icon"
+          />
+          <h3>Diagnosis & Treatment</h3>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/medical-14/512/9-1024.png"
+            alt="Hospital Icon"
+          />
+          <h3>Hospitals</h3>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/color-svg-vector-icons-part-2/512/create_with_plus_mail_layer-512.png"
+            alt="Comments Icon"
+          />
+          <h3>Comments</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
